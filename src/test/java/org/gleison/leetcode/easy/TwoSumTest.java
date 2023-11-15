@@ -7,7 +7,7 @@ class TwoSumTest {
     @org.junit.jupiter.api.Test
     void twoSum() {
 
-        
+
 
     }
 }
