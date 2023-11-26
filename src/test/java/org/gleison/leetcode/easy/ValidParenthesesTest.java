@@ -54,4 +54,18 @@ class ValidParenthesesTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void isValid6() {
+        var actual = valPar.isValid("{)");
+        var expected = false;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void isValid7() {
+        var actual = valPar.isValid("(}");
+        var expected = false;
+        assertEquals(expected, actual);
+    }
+
 }
