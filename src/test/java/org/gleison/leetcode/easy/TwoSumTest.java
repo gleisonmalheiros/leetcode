@@ -55,4 +55,15 @@ class TwoSumTest {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    void twoSumTest4() {
+        int[] nums = {};
+        int target = 0;
+
+        int[] actual = twoSum.twoSum(nums, target);
+        int[] expected = {};
+
+        assertArrayEquals(expected, actual);
+    }
+
 }
