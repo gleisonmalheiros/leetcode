@@ -27,11 +27,11 @@ class MergeTwoSortedLists {
 
         ListNode list3 = new ListNode(); // new head
 
-        var l1 = list1;
-        var l2 = list2;
-        var l3 = list3;
+        ListNode l1 = list1;
+        ListNode l2 = list2;
+        ListNode l3 = list3;
 
-        var hasNext = true;
+        Boolean hasNext = true;
         do {
             if ((l1 != null) && (l2 != null)) {
                 if (l1.val < l2.val) {
@@ -80,7 +80,7 @@ class MergeTwoSortedLists {
             List<Integer> al = new ArrayList<>();
 
             while (ln != null) {
-                al.addLast(ln.val);
+                al.add(ln.val);
                 ln = ln.next;
             }
 

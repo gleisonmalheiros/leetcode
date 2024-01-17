@@ -22,11 +22,11 @@ class RemoveDuplicatesSortedArrayTest {
 
     @Test
     void removeDuplicatesTest1() {
-        var nums_actual = new int[]{1,1,2};
-        var nums_expected = new int[]{1,2};
+        int[] nums_actual = new int[]{1,1,2};
+        int[] nums_expected = new int[]{1,2};
 
-        var actual = rdsa.removeDuplicates(nums_actual);
-        var expected = nums_expected.length;
+        int actual = rdsa.removeDuplicates(nums_actual);
+        int expected = nums_expected.length;
 
         // testing the "k" number, which is how many non-duplicates numbers in the array
         assertEquals(expected, actual);
@@ -39,11 +39,11 @@ class RemoveDuplicatesSortedArrayTest {
 
     @Test
     void removeDuplicatesTest2() {
-        var nums_actual = new int[]{0,0,1,1,1,2,2,3,3,4};
-        var nums_expected = new int[]{0,1,2,3,4};
+        int[] nums_actual = new int[]{0,0,1,1,1,2,2,3,3,4};
+        int[] nums_expected = new int[]{0,1,2,3,4};
 
-        var actual = rdsa.removeDuplicates(nums_actual);
-        var expected = nums_expected.length;
+        int actual = rdsa.removeDuplicates(nums_actual);
+        int expected = nums_expected.length;
 
         // testing the "k" number, which is how many non-duplicates numbers in the array
         assertEquals(expected, actual);

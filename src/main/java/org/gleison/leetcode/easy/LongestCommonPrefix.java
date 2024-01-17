@@ -17,7 +17,7 @@ public class LongestCommonPrefix {
             res = strs[0]; // first prefix is whole first word
 
             for (int i = 1; i < strs.length; i++) { // for each word after the first
-                var word = strs[i];
+                String word = strs[i];
 
                 if (word.length() < res.length()) { // whichever smaller
                     res = res.substring(0,word.length());

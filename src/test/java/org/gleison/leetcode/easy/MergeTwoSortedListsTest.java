@@ -27,8 +27,8 @@ class MergeTwoSortedListsTest {
         MergeTwoSortedLists.ListNode ln2 = new MergeTwoSortedLists.ListNode(2, ln3);
         MergeTwoSortedLists.ListNode ln1 = new MergeTwoSortedLists.ListNode(1, ln2); // head node
 
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
-        var expected = new Integer[]{1,2,4};
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
+        Integer[] expected = new Integer[]{1,2,4};
 
         assertArrayEquals(expected, actual);
     }
@@ -36,26 +36,26 @@ class MergeTwoSortedListsTest {
     @Test
     void listNodeToArrayTest2() {
         // testing empty ListNode, should return []
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(null);
-        var expected = new Integer[]{};
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(null);
+        Integer[] expected = new Integer[]{};
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void listNodeToArrayTest3() {
         // testing ListNode [1]
-        var ln1 = new MergeTwoSortedLists.ListNode(1); // head node
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
-        var expected = new Integer[]{1};
+        MergeTwoSortedLists.ListNode ln1 = new MergeTwoSortedLists.ListNode(1); // head node
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
+        Integer[] expected = new Integer[]{1};
         assertArrayEquals(expected, actual);
     }
 
     @Test
     void listNodeToArrayTest4() {
         // testing ListNode [], as the "val" attribute in ListNode is a primitive, then default 0
-        var ln1 = new MergeTwoSortedLists.ListNode(); // head node
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
-        var expected = new Integer[]{0};
+        MergeTwoSortedLists.ListNode ln1 = new MergeTwoSortedLists.ListNode(); // head node
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(ln1);
+        Integer[] expected = new Integer[]{0};
         assertArrayEquals(expected, actual);
     }
 
@@ -71,11 +71,11 @@ class MergeTwoSortedListsTest {
     void mergeTwoListsTest2() {
         // testing the merge when one ListNode is null
         MergeTwoSortedLists.ListNode ln = new MergeTwoSortedLists.ListNode(1);
-        var expected = new Integer[]{1};
+        Integer[] expected = new Integer[]{1};
 
         // merging when the *first* parameter is null
         MergeTwoSortedLists.ListNode firstNull = mtsl.mergeTwoLists(null, ln);
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(firstNull);
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(firstNull);
         assertArrayEquals(expected, actual);
 
         // merging when *second* parameter is null
@@ -98,8 +98,8 @@ class MergeTwoSortedListsTest {
 
         MergeTwoSortedLists.ListNode mergedLn = mtsl.mergeTwoLists(ln1, zln1);
 
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(mergedLn);
-        var expected = new Integer[]{1,1,2,3,4,4};
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(mergedLn);
+        Integer[] expected = new Integer[]{1,1,2,3,4,4};
 
         assertArrayEquals(expected, actual);
     }
@@ -119,8 +119,8 @@ class MergeTwoSortedListsTest {
 
         MergeTwoSortedLists.ListNode mergedLn = mtsl.mergeTwoLists(ln1, zln1);
 
-        var actual = MergeTwoSortedLists.ListNode.listNodeToArray(mergedLn);
-        var expected = new Integer[]{1,1,2,3,4};
+        Integer[] actual = MergeTwoSortedLists.ListNode.listNodeToArray(mergedLn);
+        Integer[] expected = new Integer[]{1,1,2,3,4};
 
         assertArrayEquals(expected, actual);
     }

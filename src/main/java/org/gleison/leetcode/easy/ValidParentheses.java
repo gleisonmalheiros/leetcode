@@ -16,7 +16,7 @@ import java.util.LinkedList;
 public class ValidParentheses {
 
     public boolean isValid(String s) {
-        var llist = new LinkedList<Character>();
+        LinkedList<Character> llist = new LinkedList<Character>();
 
         for (int i = 0; i < s.length(); i++) {
 

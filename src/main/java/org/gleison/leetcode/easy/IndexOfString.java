@@ -18,7 +18,7 @@ public class IndexOfString {
 
         if (needle.length() <= haystack.length()) {
             for (int i = 0; i <= (haystack.length() - needle.length()); i++) {
-                var word = haystack.substring(i, needle.length()+i);
+                String word = haystack.substring(i, needle.length()+i);
                 if (needle.equals(word)) {
                     return i;
                 }

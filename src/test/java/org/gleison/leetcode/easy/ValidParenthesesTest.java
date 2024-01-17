@@ -21,57 +21,57 @@ class ValidParenthesesTest {
 
     @Test
     void isValid1() {
-        var actual = valPar.isValid("()");
-        var expected = true;
+        Boolean actual = valPar.isValid("()");
+        Boolean expected = true;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid2() {
-        var actual = valPar.isValid("()[]{}");
-        var expected = true;
+        Boolean actual = valPar.isValid("()[]{}");
+        Boolean expected = true;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid3() {
-        var actual = valPar.isValid("[(()[]{})]");
-        var expected = true;
+        Boolean actual = valPar.isValid("[(()[]{})]");
+        Boolean expected = true;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid4() {
-        var actual = valPar.isValid("(]");
-        var expected = false;
+        Boolean actual = valPar.isValid("(]");
+        Boolean expected = false;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid5() {
-        var actual = valPar.isValid("]");
-        var expected = false;
+        Boolean actual = valPar.isValid("]");
+        Boolean expected = false;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid6() {
-        var actual = valPar.isValid("{)");
-        var expected = false;
+        Boolean actual = valPar.isValid("{)");
+        Boolean expected = false;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid7() {
-        var actual = valPar.isValid("(}");
-        var expected = false;
+        Boolean actual = valPar.isValid("(}");
+        Boolean expected = false;
         assertEquals(expected, actual);
     }
 
     @Test
     void isValid8() {
-        var actual = valPar.isValid("(A");
-        var expected = false;
+        Boolean actual = valPar.isValid("(A");
+        Boolean expected = false;
         assertEquals(expected, actual);
     }
 
