@@ -47,7 +47,7 @@ class PermMissingElemTest {
     @Test
     void solutionTestSingle() {
         int actual = pme.solution(new int[]{1});
-        int expected = 1;
+        int expected = 2;
         assertEquals(expected, actual);
 
         actual = pme.solution(new int[]{2});

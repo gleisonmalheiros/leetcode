@@ -1,5 +1,7 @@
 /**
- * 
+
+ https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
 For example, number 9 has binary representation 1001 and contains a binary gap of length 2.
