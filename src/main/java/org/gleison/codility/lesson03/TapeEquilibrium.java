@@ -45,7 +45,7 @@
  each element of array A is an integer within the range [−1,000..1,000].
  */
 
-package org.gleison.codility;
+package org.gleison.codility.lesson03;
 
 public class TapeEquilibrium {
 

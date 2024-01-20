@@ -42,7 +42,7 @@ Assume that:
 In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
  */
 
-package org.gleison.codility;
+package org.gleison.codility.lesson02;
 
 public class CyclicRotation {
 

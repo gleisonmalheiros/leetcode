@@ -1,4 +1,4 @@
-package org.gleison.codility;
+package org.gleison.codility.lesson03;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

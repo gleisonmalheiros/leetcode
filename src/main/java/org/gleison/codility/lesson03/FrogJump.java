@@ -30,7 +30,7 @@ Write an efficient algorithm for the following assumptions:
         X ≤ Y.
  */
 
-package org.gleison.codility;
+package org.gleison.codility.lesson03;
 
 public class FrogJump {
     

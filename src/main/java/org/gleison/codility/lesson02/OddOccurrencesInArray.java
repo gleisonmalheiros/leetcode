@@ -33,7 +33,7 @@ Write an efficient algorithm for the following assumptions:
         all but one of the values in A occur an even number of times.
  */
 
-package org.gleison.codility;
+package org.gleison.codility.lesson02;
 
 import java.util.Set;
 import java.util.HashSet;

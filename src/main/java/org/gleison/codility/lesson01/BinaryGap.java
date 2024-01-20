@@ -23,7 +23,7 @@ Write an efficient algorithm for the following assumptions:
         N is an integer within the range [1..2,147,483,647].
  */
 
-package org.gleison.codility;
+package org.gleison.codility.lesson01;
 
 public class BinaryGap {
 
