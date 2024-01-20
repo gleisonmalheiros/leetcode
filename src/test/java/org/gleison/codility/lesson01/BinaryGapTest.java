@@ -1,8 +1,9 @@
 package org.gleison.codility.lesson01;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,31 +19,18 @@ class BinaryGapTest {
         bg = new BinaryGap();
     }
 
-    @Test
-    void solutionTest1() {
-
-        int actual = bg.solution(9); // 1001
-        int expected = 2;
-        assertEquals(expected, actual);
-
-        actual = bg.solution(529); // 1000010001
-        expected = 4;
-        assertEquals(expected, actual);
-
-        actual = bg.solution(20); // 10100
-        expected = 1;
-        assertEquals(expected, actual);
-
-        actual = bg.solution(15); // 1111
-        expected = 0;
-        assertEquals(expected, actual);
-
-        actual = bg.solution(32); // 100000
-        expected = 0;
-        assertEquals(expected, actual);
-
-        actual = bg.solution(1041); // 10000010001
-        expected = 5;
-        assertEquals(expected, actual);
+    @ParameterizedTest
+    @CsvSource({
+            "9,2", // 1001
+            "529,4", // 1000010001
+            "20,1", // 10100
+            "15,0", // 1111
+            "32,0", // 100000
+            "1041,5" // 10000010001
+    })
+    public void solutionTest1(int pN, int pExpected) {
+        int actual = bg.solution(pN);
+        assertEquals(pExpected, actual);
     }
+
 }
